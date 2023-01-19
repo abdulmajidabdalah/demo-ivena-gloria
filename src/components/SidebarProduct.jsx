@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../components/assets/Logo Ivena.png";
+import Logo from "../components/assets/LogoIvena.png";
 import { BsFillPersonFill } from "react-icons/bs";
 import { TbBriefcase } from "react-icons/tb";
 import { MdMiscellaneousServices } from "react-icons/md";

@@ -8,9 +8,9 @@ import { Helmet } from "react-helmet";
 
 import { thumbEditorial } from "../data/thumbEditorial";
 import SidebarProduct from "../components/SidebarProduct";
-import ButtonNavigationProduct from "../components/ButtonNavigationProduct";
 
 import ClockLoader from "react-spinners/ClockLoader";
+import NavbarProduct from "../components/NavbarProduct";
 
 const Editorial = () => {
   let navigate = useNavigate();
@@ -43,6 +43,7 @@ const Editorial = () => {
         </div>
       ) : (
         <div>
+          <NavbarProduct />
           <Helmet>
             <title>Product - Editorial</title>
             <meta
@@ -54,16 +55,16 @@ const Editorial = () => {
             <SidebarProduct />
             <div className="w-[100%] mt-2">
               <main>
-                <header className="flex justify-between">
+                <header className="flex justify-between mt-16 lg:mt-0">
                   <button
-                    className="bg-slate-200 text-slate-400 text-sm font-semibold flex justify-between items-center gap-1 px-3 py-2 mt-1 rounded-r-md hover:text-white hover:bg-orange-400 duration-300"
+                    className="bg-slate-200 text-slate-400 text-sm font-semibold flex justify-between items-center gap-1 px-3 py-2 mt-1 rounded-r-md hover:text-white hover:bg-orange duration-300"
                     onClick={clickBackToHome}
                   >
                     <HiChevronDoubleLeft size={15} />
                     Back to home
                   </button>
                   <button
-                    className="bg-slate-200 text-slate-400 text-sm font-semibold flex justify-between items-center gap-1 px-3 py-2 mt-1 rounded-l-md hover:text-white hover:bg-orange-400 duration-300"
+                    className="bg-slate-200 text-slate-400 text-sm font-semibold flex justify-between items-center gap-1 px-3 py-2 mt-1 rounded-l-md hover:text-white hover:bg-orange duration-300"
                     onClick={nextNav}
                   >
                     Next
@@ -75,7 +76,7 @@ const Editorial = () => {
                     <h1 className="text-2xl font-semibold lg:text-3xl lg:font-bold text-slate-700">
                       Editorial
                     </h1>
-                    <div className="bg-orange-500 h-[3px] w-20 my-2"></div>
+                    <div className="bg-orange h-[3px] w-20 my-2"></div>
                     <div className="grid grid-cols-2 gap-3 md:grid md:grid-cols-3 lg:grid lg:grid-cols-2 lg:mt-16 my-10">
                       <Link
                         to={"/editorial/magazine"}
@@ -91,10 +92,10 @@ const Editorial = () => {
                             view
                           </h1>
                         </div>
-                        <p className="hidden lg:block text-orange-500 bg-black opacity-80 font-semibold text-center rounded-sm py-2">
+                        <p className="hidden lg:block text-orange bg-black opacity-80 font-semibold text-center rounded-sm py-2">
                           {thumbEditorial[0].desc}
                         </p>
-                        <div className="lg:hidden flex justify-between text-orange-500 bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1">
+                        <div className="lg:hidden flex justify-between bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1 text-orange">
                           <p>{thumbEditorial[0].desc}</p>
                           <p>Detail</p>
                         </div>
@@ -113,10 +114,10 @@ const Editorial = () => {
                             view
                           </h1>
                         </div>
-                        <p className="hidden lg:block text-orange-500 bg-black opacity-80 font-semibold text-center rounded-sm py-2">
+                        <p className="hidden lg:block text-orange bg-black opacity-80 font-semibold text-center rounded-sm py-2">
                           {thumbEditorial[1].desc}
                         </p>
-                        <div className="lg:hidden flex justify-between text-orange-500 bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1">
+                        <div className="lg:hidden flex justify-between bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1 text-orange">
                           <p>{thumbEditorial[1].desc}</p>
                           <p>Detail</p>
                         </div>
@@ -135,10 +136,10 @@ const Editorial = () => {
                             view
                           </h1>
                         </div>
-                        <p className="hidden lg:block text-orange-500 bg-black opacity-80 font-semibold text-center rounded-sm py-2">
+                        <p className="hidden lg:block text-orange bg-black opacity-80 font-semibold text-center rounded-sm py-2">
                           {thumbEditorial[2].desc}
                         </p>
-                        <div className="lg:hidden flex justify-between text-orange-500 bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1">
+                        <div className="lg:hidden flex justify-between bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1 text-orange">
                           <p>{thumbEditorial[2].desc}</p>
                           <p>Detail</p>
                         </div>
@@ -157,10 +158,10 @@ const Editorial = () => {
                             view
                           </h1>
                         </div>
-                        <p className="hidden lg:block text-orange-500 bg-black opacity-80 font-semibold text-center rounded-sm py-2">
+                        <p className="hidden lg:block text-orange bg-black opacity-80 font-semibold text-center rounded-sm py-2">
                           {thumbEditorial[3].desc}
                         </p>
-                        <div className="lg:hidden flex justify-between text-orange-500 bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1">
+                        <div className="lg:hidden flex justify-between bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1 text-orange">
                           <p>{thumbEditorial[3].desc}</p>
                           <p>Detail</p>
                         </div>
@@ -179,10 +180,10 @@ const Editorial = () => {
                             view
                           </h1>
                         </div>
-                        <p className="hidden lg:block text-orange-500 bg-black opacity-80 font-semibold text-center rounded-sm py-2">
+                        <p className="hidden lg:block text-orange bg-black opacity-80 font-semibold text-center rounded-sm py-2">
                           {thumbEditorial[4].desc}
                         </p>
-                        <div className="lg:hidden flex justify-between text-orange-500 bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1">
+                        <div className="lg:hidden flex justify-between bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1 text-orange">
                           <p>{thumbEditorial[4].desc}</p>
                           <p>Detail</p>
                         </div>
@@ -201,10 +202,10 @@ const Editorial = () => {
                             view
                           </h1>
                         </div>
-                        <p className="hidden lg:block text-orange-500 bg-black opacity-80 font-semibold text-center rounded-sm py-2">
+                        <p className="hidden lg:block text-orange bg-black opacity-80 font-semibold text-center rounded-sm py-2">
                           {thumbEditorial[5].desc}
                         </p>
-                        <div className="lg:hidden flex justify-between text-orange-500 bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1">
+                        <div className="lg:hidden flex justify-between bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1 text-orange">
                           <p>{thumbEditorial[5].desc}</p>
                           <p>Detail</p>
                         </div>
@@ -226,34 +227,33 @@ const Editorial = () => {
                       natural dan ringan untuk ditonton karena dibalut dengan
                       sentuhan komedi dan fun.
                     </article>
-                    <div className="bg-orange-500 h-[1px] w-full my-8"></div>
+                    <div className="bg-orange h-[1px] w-full my-8"></div>
                     <div className="flex justify-start items-center my-2">
-                      <BsCheck size={25} className="text-orange-500 mr-2" />
+                      <BsCheck size={25} className="text-orange mr-2" />
                       <p className="font-semibold text-slate-400">
                         Client : POCO Indonesia
                       </p>
                     </div>
                     <div className="flex justify-start items-center my-2">
-                      <BsCheck size={25} className="text-orange-500 mr-2" />
+                      <BsCheck size={25} className="text-orange mr-2" />
                       <p className="font-semibold text-slate-400">
                         Project URL :{" "}
-                        <span className="text-orange-500 cursor-pointer">
+                        <span className="text-orange cursor-pointer">
                           View Here
                         </span>
                       </p>
                     </div>
                     <div className="flex justify-start items-center my-2">
-                      <BsCheck size={25} className="text-orange-500 mr-2" />
+                      <BsCheck size={25} className="text-orange mr-2" />
                       <p className="font-semibold text-slate-400">
                         Categories : Video Komersial – Technology Product
                       </p>
                     </div>
-                    <div className="bg-orange-500 h-[1px] w-full my-8"></div>
+                    <div className="bg-orange h-[1px] w-full my-8"></div>
                   </div>
                 </div>
               </main>
               <BackToTop />
-              <ButtonNavigationProduct />
               <Footer />
             </div>
           </section>

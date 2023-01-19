@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import IMG2 from "./assets/clay-banks-POzx_amnWJw-unsplash.jpg";
+import IMG2 from "./assets/home/contac.jpg";
 import { FiArrowDown } from "react-icons/fi";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";

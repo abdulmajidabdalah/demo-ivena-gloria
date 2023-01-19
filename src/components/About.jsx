@@ -1,5 +1,5 @@
 import React from "react";
-import IMG2 from "./assets/batik.png";
+import IMG2 from "./assets/home/about.jpg";
 import { FiArrowDown } from "react-icons/fi";
 import { Link } from "react-scroll";
 import ModalForm from "./ModalForm";
@@ -14,15 +14,12 @@ const About = () => {
           </h1>
           <div className="flex md:block lg:block">
             <h2 className="font-extrabold font-poppins text-lg md:text-3xl lg:text-3xl">
-              PROFILE
-            </h2>
-            <h2 className="font-extrabold font-poppins text-lg md:text-3xl lg:text-3xl">
-              IVENA GLORIA ARDANA
+              PROFILE <br /> IVENA GLORIA ARDANA
             </h2>
           </div>
           <article
             align="justify"
-            className="mt-[50px] md:mt-[62px] lg:mt-[62px] tracking-wider leading-loose text-[#7E8890]"
+            className="mt-[20px] md:mt-[20px] lg:mt-[20px] tracking-wider leading-loose text-[#7E8890]"
           >
             Perusahaan yang memiliki kompetensi dalam bidang Design Grafis dan
             Percetakan. Didukung Sumber Daya Manusia (SDM) yang yang
@@ -34,7 +31,7 @@ const About = () => {
           </article>
           <article
             align="justify"
-            className="mt-[50px] md:mt-[35px] lg:mt-[35px] tracking-wider leading-loose text-[#7E8890]"
+            className="mt-[20px] md:mt-[20px] lg:mt-[20px] tracking-wider leading-loose text-[#7E8890]"
           >
             Dengan segala produk percetakan offset, seperti Company Profile,
             Annual Report, Wording Polis, Cover Polis, Agenda, Kalender, Brosur,
@@ -43,7 +40,7 @@ const About = () => {
           </article>
           <article
             align="justify"
-            className="mt-4 md:mt-[35px] lg:mt-[35px] tracking-wider leading-loose text-[#7E8890]"
+            className="mt-4 md:mt-[20px] lg:mt-[20px] tracking-wider leading-loose text-[#7E8890]"
           >
             Hal ini merupakan bukti nyata dari loyalitas dan kepercayaan
             mitra/pelanggan terhadap kami. Dengan pengalaman dan kemampuan yang
@@ -60,14 +57,14 @@ const About = () => {
               duration={500}
               className="flex justify-center items-center hover:cursor-pointer hover:font-extrabold duration-200 w-[136px] h-[43px] bg-[#F4AD24] text-white font-poppins"
             >
-              <p>Work</p>
+              <p>portfolio</p>
               <FiArrowDown size={20} className="ml-2" />
             </Link>
             <ModalForm />
           </div>
         </main>
         <aside className="hidden md:flex lg:flex justify-center items-center md:mt-[-3.3rem]">
-          <img src={IMG2} alt="" className="object-cover" />
+          <img src={IMG2} alt="" className="object-cover h-full" />
         </aside>
       </div>
     </section>

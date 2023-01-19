@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Footer from "../../../components/Footer";
 import BackToTop from "../../../components/BackToTop";
-import ButtonNavigationProduct from "../../../components/ButtonNavigationProduct";
 import AsideDetailProduct from "../../../components/AsideDetailProduct";
 import { SlideshowLightbox } from "lightbox.js-react";
 import IMG1 from "../../../components/assets/products/03 MERCHANDISE/01 SOUVENIR/PEN Set.jpg";
@@ -12,21 +11,23 @@ import IMG4 from "../../../components/assets/products/03 MERCHANDISE/01 SOUVENIR
 import IMG5 from "../../../components/assets/products/03 MERCHANDISE/01 SOUVENIR/SOUVENIR plakat kayu.jpg";
 import IMG6 from "../../../components/assets/products/03 MERCHANDISE/01 SOUVENIR/SOUVENIR Plakat.jpg";
 import { IoMdCloseCircle } from "react-icons/io";
+import NavbarProduct from "../../../components/NavbarProduct";
 
 const Souvenir = () => {
   let navigate = useNavigate();
   const back = () => {
-    navigate("/editorial");
+    navigate("/merchandise");
   };
 
   return (
     <>
       <div>
+        <NavbarProduct />
         <Helmet>
-          <title>Editorial - Souvenir</title>
+          <title>Merchandise - Souvenir</title>
           <meta
             name="description"
-            content="Editorial berisi tentang bla bla bla"
+            content="Merchandise berisi tentang bla bla bla"
           />
         </Helmet>
         <section className="flex">
@@ -36,7 +37,7 @@ const Souvenir = () => {
               <h1 className="my-4 text-xl font-bold hidden lg:block">
                 Souvenir
               </h1>
-              <div className="lg:hidden flex justify-between text-lg font-bold my-8">
+              <div className="lg:hidden flex justify-between text-lg font-bold my-8 mt-16">
                 <p>Souvenir</p>
                 <button onClick={back}>
                   <IoMdCloseCircle size={20} />
@@ -55,7 +56,6 @@ const Souvenir = () => {
               </SlideshowLightbox>
             </main>
             <BackToTop />
-            <ButtonNavigationProduct />
             <Footer />
           </div>
         </section>

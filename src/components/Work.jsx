@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import IMG2 from "./assets/work.png";
+import IMG2 from "./assets/home/portfolio.jpg";
 import Editorial from "./assets/thumb_product/editorial.jpeg";
 import Printing from "./assets/thumb_product/printing.jpeg";
 import Merchandise from "./assets/thumb_product/merchandise.jpeg";
@@ -15,7 +15,7 @@ const Work = () => {
         <div className="lg:grid lg:grid-cols-3 md:grid md:grid-cols-3 bg-[#F2F2F2] h-[100vh] md:h-full lg:h-auto">
           <main className="col-span-2 mx-4 lg:mx-[68px] lg:mt-[62px]">
             <p className="text-6xl md:text-8xl lg:text-8xl text-white font-poppins font-bold tracking-wider pt-[50px] lg:pt-0">
-              Work.
+              Portofolio
             </p>
             <p className="font-extrabold font-poppins text-2xl md:text-4xl lg:text-4xl text-[#333C4E] tracking-wider mt-2 lg:mt-0">
               Our Project
@@ -55,20 +55,20 @@ const Work = () => {
               </Link>
             </div>
             <Button
-              to="services"
+              to="workflow"
               spy={true}
               smooth={true}
               offset={0}
               duration={500}
               className="
-            flex justify-center items-center hover:cursor-pointer hover:font-extrabold duration-200 w-[136px] h-[43px] bg-[#F4AD24] text-white font-poppins text-2x mt-[60px] mb-[70px] tracking-wider"
+            flex justify-center items-center hover:cursor-pointer hover:font-extrabold duration-200 px-2 w-[170px] h-[43px] bg-[#F4AD24] text-white font-poppins text-2x mt-[60px] mb-[70px] tracking-wider"
             >
-              <p>Services</p>
+              <p>Our Workflow</p>
               <FiArrowDown size={20} className="ml-2" />
             </Button>
           </main>
           <aside className="hidden md:block lg:flex justify-center items-center bg-white">
-            <img src={IMG2} alt="" cl className="object-cover" />
+            <img src={IMG2} alt="" className="h-full w-full object-cover" />
           </aside>
         </div>
       </div>

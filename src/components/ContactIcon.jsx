@@ -31,7 +31,7 @@ const ContactIcon = () => {
     <div>
       {showButton && (
         <>
-          <div className="fixed top-[66%] lg:top-[64%] right-9 w-12 h-12 cursor-pointer">
+          <div className="fixed top-[73%] lg:top-[67%] right-5 lg:right-8 w-11 h-11 cursor-pointer">
             <a
               href="mailto:abdulmajidabdalah27@gmail.com"
               target="_blank"
@@ -40,7 +40,7 @@ const ContactIcon = () => {
               <img src={IMGEMAIL} alt="" />
             </a>
           </div>
-          <div className="fixed top-[73%] lg:top-[73%] right-9 w-11 h-11 cursor-pointer">
+          <div className="fixed top-[82%] lg:top-[75%] right-5 lg:right-8 w-10 h-10 cursor-pointer">
             <ReactWhatsapp
               number="+6285782189711"
               message="please ask something"
@@ -52,7 +52,7 @@ const ContactIcon = () => {
       )}
 
       <div
-        className="fixed top-[80%] lg:top-[83%] right-0 transform -translate-x-1/2 w-14 h-14 rounded-[50%] bg-purple-400 text-white flex items-center justify-center cursor-pointer"
+        className="fixed top-[90%] lg:top-[83%] right-5 h-12 w-12 lg:w-14 lg:h-14 rounded-[50%] bg-purple-400 text-white flex items-center justify-center cursor-pointer"
         onClick={() => setShowButton(!showButton)}
       >
         <div className="text-white">

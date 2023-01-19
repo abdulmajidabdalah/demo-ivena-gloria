@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FiArrowDown } from "react-icons/fi";
-import IMG2 from "./assets/clients.png";
+import IMG2 from "./assets/home/client.jpg";
 import { clients } from "../data/clients";
 import { Link as Button } from "react-scroll";
 

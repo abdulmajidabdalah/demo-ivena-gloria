@@ -1,5 +1,5 @@
 import React from "react";
-import PDF from "./assets/pdf/9_communication_Profile.pdf";
+import PDF from "./assets/pdf/kompany-profile.pdf";
 import { FaDownload } from "react-icons/fa";
 
 const Download = () => {

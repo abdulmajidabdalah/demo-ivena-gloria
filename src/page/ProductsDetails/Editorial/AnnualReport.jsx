@@ -1,70 +1,63 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { imgdetails3 } from "../../../data/imgdetails3";
+import Footer from "../../../components/Footer";
+import BackToTop from "../../../components/BackToTop";
+import AsideDetailProduct from "../../../components/AsideDetailProduct";
+import { SlideshowLightbox } from "lightbox.js-react";
+import { IoMdCloseCircle } from "react-icons/io";
+import { annualReportImg } from "../../../data/annualReportImg";
+import NavbarProduct from "../../../components/NavbarProduct";
 
 const AnnualReport = () => {
-  const [sliderData, setSliderData] = useState(imgdetails3[0]);
-
-  const handleClick = (index) => {
-    const slider = imgdetails3[index];
-    setSliderData(slider);
+  let navigate = useNavigate();
+  const back = () => {
+    navigate("/editorial");
   };
+
   return (
-    <div>
-      <Helmet>
-        <title>Editorial - Annual Report</title>
-      </Helmet>
-      <div className="flex justify-center items-center h-screen">
-        <div className="lg:grid lg:grid-cols-2 lg:h-[90%] lg:w-[80%] h-screen w-full rounded-xl shadow-sm shadow-slate-600 lg:p-0 p-2">
-          <div className="lg:hidden flex justify-between font-bold text-xl">
-            <h1>Annual Report</h1>
-            <Link to={"/editorial"}>x</Link>
-          </div>
-          <div className="flex justify-center items-center lg:px-4 mt-10">
-            <img
-              src={sliderData.image}
-              alt=""
-              className="lg:h-[300px] h-[200px] object-cover"
-            />
-          </div>
-          <div>
-            <Link
-              to={"/editorial"}
-              className="text-right font-bold pr-5 float-right hidden lg:block"
-            >
-              x
-            </Link>
-            <h1 className="font-bold my-10 text-4xl hidden lg:block">
-              Annual Report
-            </h1>
-            <p className="font-bold text-xl my-5">Select Image Product</p>
-            <div className="grid grid-cols-6 gap-2 pr-2">
-              {imgdetails3.map((item, i) => (
-                <div
-                  key={i}
-                  className={
-                    sliderData.id === i
-                      ? "bg-slate-200 flex justify-center items-center border-2 border-orange-400 hover:cursor-pointer rounded-md"
-                      : "flex justify-center items-center border-2 border-slate-300 rounded-md"
-                  }
-                >
+    <>
+      <div>
+        <NavbarProduct />
+        <Helmet>
+          <title>Editorial - AnnualReport</title>
+          <meta
+            name="description"
+            content="Editorial berisi tentang bla bla bla"
+          />
+        </Helmet>
+        <section className="flex">
+          <AsideDetailProduct />
+          <div className="w-[100%] mt-2">
+            <main className="px-4">
+              <h1 className="my-4 text-xl font-bold hidden lg:block">
+                AnnualReport
+              </h1>
+              <div className="lg:hidden flex justify-between text-lg font-bold my-8 mt-16">
+                <p>AnnualReport</p>
+                <button onClick={back}>
+                  <IoMdCloseCircle size={20} />
+                </button>
+              </div>
+              <SlideshowLightbox
+                theme="lightbox"
+                className="lg:grid lg:grid-cols-4 gap-1 grid grid-cols-2"
+              >
+                {annualReportImg.map((item, index) => (
                   <img
+                    key={index}
+                    className="lg:mt-0 mt-4"
                     src={item.image}
                     alt=""
-                    className="lg:w-[60px] lg:h-[60px] w-[50px] h-[50px] cursor-pointer"
-                    onClick={() => handleClick(i)}
                   />
-                </div>
-              ))}
-            </div>
-            <button className="bg-slate-500 px-3 py-2 my-8 rounded-md text-white">
-              Order Now
-            </button>
+                ))}
+              </SlideshowLightbox>
+            </main>
+            <BackToTop />
+            <Footer />
           </div>
-        </div>
+        </section>
       </div>
-    </div>
+    </>
   );
 };
 

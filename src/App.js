@@ -24,8 +24,10 @@ import Banner from "./page/ProductsDetails/Printing/Banner";
 import GreetingCard from "./page/ProductsDetails/Printing/GreetingCard";
 import Sticker from "./page/ProductsDetails/Printing/Sticker";
 import Stationary from "./page/ProductsDetails/Printing/Stationary";
-import Lightbox from "./components/Lightbox";
 import { initLightboxJS } from "lightbox.js-react";
+import Photo from "./page/ProductsDetails/PhotoVideo/Photo";
+import Video from "./page/ProductsDetails/PhotoVideo/Video";
+import NavbarMobile from "./components/NavbarMobile";
 
 const App = () => {
   useEffect(() => {
@@ -66,7 +68,9 @@ const App = () => {
         <Route path="/printing/greeting_card" element={<GreetingCard />} />
         <Route path="/printing/sticker" element={<Sticker />} />
         <Route path="/printing/stationary" element={<Stationary />} />
-        <Route path="/test" element={<Lightbox />} />
+        <Route path="/photo&video/photo" element={<Photo />} />
+        <Route path="/photo&video/video" element={<Video />} />
+        <Route path="/test" element={<NavbarMobile />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </>

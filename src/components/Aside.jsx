@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import Logo from "./assets/Logo Ivena.png";
+import Logo from "./assets/LogoIvena.png";
 import { BsFillPersonFill } from "react-icons/bs";
-import { TbBriefcase } from "react-icons/tb";
-import { MdMiscellaneousServices } from "react-icons/md";
-import { BsFillEmojiLaughingFill } from "react-icons/bs";
 import { MdCall } from "react-icons/md";
 import { Link } from "react-scroll";
+import "./assets/icofont/icofont.min.css";
 
 const Aside = () => {
   const [button, setButton] = useState("#");
@@ -26,7 +24,7 @@ const Aside = () => {
             <img src={Logo} alt="logo" className="w-[220px] object-cover" />
           </a>
         </nav>
-        <nav className="bg-[#2B333E] border-b-[0.5px] border-gray-500 flex justify-center items-center text-center text-gray-500 hover:text-[#F4AD24] hover:cursor-pointer duration-150">
+        <nav className="bg-bg-aside border-b-[0.5px] border-gray-500 flex justify-center items-center text-center text-gray-500 hover:text-[#F4AD24] hover:cursor-pointer duration-150">
           <Link to="about" spy={true} smooth={true} offset={0} duration={500}>
             <div>
               <p className="text-4xl ml-2">
@@ -36,43 +34,37 @@ const Aside = () => {
             </div>
           </Link>
         </nav>
-        <nav className="bg-[#2B333E] border-b-[0.5px] border-gray-500 flex justify-center items-center text-center text-gray-500 hover:text-[#F4AD24] hover:cursor-pointer duration-150">
+        <nav className="bg-bg-aside border-b-[0.5px] border-gray-500 flex justify-center items-center text-center text-gray-500 hover:text-[#F4AD24] hover:cursor-pointer duration-150">
           <Link to="work" spy={true} smooth={true} offset={0} duration={500}>
             <div>
-              <p className="text-4xl">
-                <TbBriefcase />
-              </p>
-              <p className="font-poppins font-bold">Work</p>
+              <i className="icofont-briefcase icofont-2x"></i>
+              <p className="font-poppins font-bold">Portfolio</p>
             </div>
           </Link>
         </nav>
-        <nav className="bg-[#2B333E] border-b-[0.5px] border-gray-500 flex justify-center items-center text-center text-gray-500 hover:text-[#F4AD24] hover:cursor-pointer duration-150">
+        <nav className="bg-bg-aside border-b-[0.5px] border-gray-500 flex justify-center items-center text-center text-gray-500 hover:text-[#F4AD24] hover:cursor-pointer duration-150">
           <Link
-            to="services"
+            to="workflow"
             spy={true}
             smooth={true}
             offset={0}
             duration={500}
           >
             <div>
-              <p className="text-4xl ml-2 mb-1">
-                <MdMiscellaneousServices />
-              </p>
-              <p className="font-poppins font-bold">Services</p>
+              <i className="icofont-badge icofont-2x"></i>
+              <p className="font-poppins font-bold">Our Workflow</p>
             </div>
           </Link>
         </nav>
-        <nav className="bg-[#2B333E] border-b-[0.5px] border-gray-500 flex justify-center items-center text-center text-gray-500 hover:text-[#F4AD24] hover:cursor-pointer duration-150">
+        <nav className="bg-bg-aside border-b-[0.5px] border-gray-500 flex justify-center items-center text-center text-gray-500 hover:text-[#F4AD24] hover:cursor-pointer duration-150">
           <Link to="clients" spy={true} smooth={true} offset={0} duration={500}>
             <div>
-              <p className="text-4xl ml-2 mb-1">
-                <BsFillEmojiLaughingFill />
-              </p>
+              <i className="icofont-people icofont-2x"></i>
               <p className="font-poppins font-bold">Clients</p>
             </div>
           </Link>
         </nav>
-        <nav className="bg-[#2B333E] border-b-[0.5px] border-gray-500 flex justify-center items-center text-center text-gray-500 hover:text-[#F4AD24] hover:cursor-pointer duration-150">
+        <nav className="bg-bg-aside border-b-[0.5px] border-gray-500 flex justify-center items-center text-center text-gray-500 hover:text-[#F4AD24] hover:cursor-pointer duration-150">
           <Link to="contact" spy={true} smooth={true} offset={0} duration={500}>
             <div>
               <p className="text-4xl ml-2">

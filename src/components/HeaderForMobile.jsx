@@ -1,11 +1,11 @@
 import React from "react";
-import VIDEO from "../components/assets/Ivena Gloria Ardana - Company Profile.mp4";
+import VIDEO from "../components/assets/video.mp4";
 import Modal from "./Modal";
 import Typewriter from "typewriter-effect";
 
 const HeaderForMobile = () => {
   return (
-    <div className="lg:hidden md:hidden block" id="headerMobile">
+    <div className="lg:hidden md:hidden relative mt-20" id="headerMobile">
       <div>
         <video autoPlay muted controlsList="nodownload">
           <source src={VIDEO} type="video/mp4" />

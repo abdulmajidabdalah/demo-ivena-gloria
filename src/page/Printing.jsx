@@ -6,9 +6,9 @@ import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
 import { Helmet } from "react-helmet";
 import SidebarProduct from "../components/SidebarProduct";
-import ButtonNavigationProduct from "../components/ButtonNavigationProduct";
 import ClockLoader from "react-spinners/ClockLoader";
 import { thumbPrinting } from "../data/thumbPrinting";
+import NavbarProduct from "../components/NavbarProduct";
 
 const Printing = () => {
   let navigate = useNavigate();
@@ -40,6 +40,7 @@ const Printing = () => {
         </div>
       ) : (
         <div>
+          <NavbarProduct />
           <Helmet>
             <title>Product - Printing</title>
             <meta
@@ -50,16 +51,16 @@ const Printing = () => {
           <div className="flex">
             <SidebarProduct />
             <div className="w-[100%]">
-              <div className="flex justify-between">
+              <div className="flex justify-between mt-16 lg:mt-0">
                 <button
-                  className="bg-slate-200 text-slate-400 text-sm font-semibold flex justify-between items-center gap-1 px-3 py-2 mt-1 rounded-r-md hover:text-white hover:bg-orange-400 duration-300"
+                  className="bg-slate-200 text-slate-400 text-sm font-semibold flex justify-between items-center gap-1 px-3 py-2 mt-1 rounded-r-md hover:text-white hover:bg-orange duration-300"
                   onClick={clickPrev}
                 >
                   <HiChevronDoubleLeft size={15} />
                   Prev
                 </button>
                 <button
-                  className="bg-slate-200 text-slate-400 text-sm font-semibold flex justify-between items-center gap-1 px-3 py-2 mt-1 rounded-l-md hover:text-white hover:bg-orange-400 duration-300"
+                  className="bg-slate-200 text-slate-400 text-sm font-semibold flex justify-between items-center gap-1 px-3 py-2 mt-1 rounded-l-md hover:text-white hover:bg-orange duration-300"
                   onClick={clickNext}
                 >
                   Next
@@ -88,10 +89,10 @@ const Printing = () => {
                             view
                           </h1>
                         </div>
-                        <p className="hidden lg:block text-orange-500 bg-black opacity-80 font-semibold text-center rounded-sm py-2">
+                        <p className="hidden lg:block text-orange bg-black opacity-80 font-semibold text-center rounded-sm py-2">
                           {thumbPrinting[0].desc}
                         </p>
-                        <div className="lg:hidden flex justify-between text-orange-500 bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1">
+                        <div className="lg:hidden flex justify-between text-orange bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1">
                           <p>{thumbPrinting[0].desc}</p>
                           <p>Detail</p>
                         </div>
@@ -110,10 +111,10 @@ const Printing = () => {
                             view
                           </h1>
                         </div>
-                        <p className="hidden lg:block text-orange-500 bg-black opacity-80 font-semibold text-center rounded-sm py-2">
+                        <p className="hidden lg:block text-orange bg-black opacity-80 font-semibold text-center rounded-sm py-2">
                           {thumbPrinting[1].desc}
                         </p>
-                        <div className="lg:hidden flex justify-between text-orange-500 bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1">
+                        <div className="lg:hidden flex justify-between text-orange bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1">
                           <p>{thumbPrinting[1].desc}</p>
                           <p>Detail</p>
                         </div>
@@ -132,10 +133,10 @@ const Printing = () => {
                             view
                           </h1>
                         </div>
-                        <p className="hidden lg:block text-orange-500 bg-black opacity-80 font-semibold text-center rounded-sm py-2">
+                        <p className="hidden lg:block text-orange bg-black opacity-80 font-semibold text-center rounded-sm py-2">
                           {thumbPrinting[2].desc}
                         </p>
-                        <div className="lg:hidden flex justify-between text-orange-500 bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1">
+                        <div className="lg:hidden flex justify-between text-orange bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1">
                           <p>{thumbPrinting[2].desc}</p>
                           <p>Detail</p>
                         </div>
@@ -154,10 +155,10 @@ const Printing = () => {
                             view
                           </h1>
                         </div>
-                        <p className="hidden lg:block text-orange-500 bg-black opacity-80 font-semibold text-center rounded-sm py-2">
+                        <p className="hidden lg:block text-orange bg-black opacity-80 font-semibold text-center rounded-sm py-2">
                           {thumbPrinting[3].desc}
                         </p>
-                        <div className="lg:hidden flex justify-between text-orange-500 bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1">
+                        <div className="lg:hidden flex justify-between text-orange bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1">
                           <p>{thumbPrinting[3].desc}</p>
                           <p>Detail</p>
                         </div>
@@ -176,10 +177,10 @@ const Printing = () => {
                             view
                           </h1>
                         </div>
-                        <p className="hidden lg:block text-orange-500 bg-black opacity-80 font-semibold text-center rounded-sm py-2">
+                        <p className="hidden lg:block text-orange bg-black opacity-80 font-semibold text-center rounded-sm py-2">
                           {thumbPrinting[4].desc}
                         </p>
-                        <div className="lg:hidden flex justify-between text-orange-500 bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1">
+                        <div className="lg:hidden flex justify-between text-orange bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1">
                           <p>{thumbPrinting[4].desc}</p>
                           <p>Detail</p>
                         </div>
@@ -198,10 +199,10 @@ const Printing = () => {
                             view
                           </h1>
                         </div>
-                        <p className="hidden lg:block text-orange-500 bg-black opacity-80 font-semibold text-center rounded-sm py-2">
+                        <p className="hidden lg:block text-orange bg-black opacity-80 font-semibold text-center rounded-sm py-2">
                           {thumbPrinting[5].desc}
                         </p>
-                        <div className="lg:hidden flex justify-between text-orange-500 bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1">
+                        <div className="lg:hidden flex justify-between text-orange bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1">
                           <p>{thumbPrinting[5].desc}</p>
                           <p>Detail</p>
                         </div>
@@ -220,10 +221,10 @@ const Printing = () => {
                             view
                           </h1>
                         </div>
-                        <p className="hidden lg:block text-orange-500 bg-black opacity-80 font-semibold text-center rounded-sm py-2">
+                        <p className="hidden lg:block text-orange bg-black opacity-80 font-semibold text-center rounded-sm py-2">
                           {thumbPrinting[6].desc}
                         </p>
-                        <div className="lg:hidden flex justify-between text-orange-500 bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1">
+                        <div className="lg:hidden flex justify-between text-orange bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1">
                           <p>{thumbPrinting[6].desc}</p>
                           <p>Detail</p>
                         </div>
@@ -246,35 +247,34 @@ const Printing = () => {
                       video ini saat bekerjasama dengan Vivo untuk
                       memperkenalkan Vivo V11.
                     </p>
-                    <div className="bg-orange-500 h-[1px] w-full my-8"></div>
+                    <div className="bg-orange h-[1px] w-full my-8"></div>
                     <div className="flex justify-start items-center my-2">
-                      <BsCheck size={25} className="text-orange-500 mr-2" />
+                      <BsCheck size={25} className="text-orange mr-2" />
                       <p className="font-semibold text-slate-400">
                         Client : VIVO Indonesia
                       </p>
                     </div>
                     <div className="flex justify-start items-center my-2">
-                      <BsCheck size={25} className="text-orange-500 mr-2" />
+                      <BsCheck size={25} className="text-orange mr-2" />
                       <p className="font-semibold text-slate-400">
                         Project URL :{" "}
-                        <span className="text-orange-500 cursor-pointer">
+                        <span className="text-orange cursor-pointer">
                           View Here
                         </span>
                       </p>
                     </div>
                     <div className="flex justify-start items-center my-2">
-                      <BsCheck size={25} className="text-orange-500 mr-2" />
+                      <BsCheck size={25} className="text-orange mr-2" />
                       <p className="font-semibold text-slate-400">
                         Categories : Mini Drama Video Commercial – Technology
                         Product
                       </p>
                     </div>
-                    <div className="bg-orange-500 h-[1px] w-full my-8"></div>
+                    <div className="bg-orange h-[1px] w-full my-8"></div>
                   </div>
                 </div>
               </div>
               <BackToTop />
-              <ButtonNavigationProduct />
               <Footer />
             </div>
           </div>

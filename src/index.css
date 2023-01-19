@@ -1,8 +1,4 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.read-more-less--more,
-.read-more-less--less {
-  color: #999;
-}
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");

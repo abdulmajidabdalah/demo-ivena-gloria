@@ -8,8 +8,8 @@ import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
 import Helmet from "react-helmet";
 import SidebarProduct from "../components/SidebarProduct";
-import ButtonNavigationProduct from "../components/ButtonNavigationProduct";
 import ClockLoader from "react-spinners/ClockLoader";
+import NavbarProduct from "../components/NavbarProduct";
 
 const PhotoVideo = () => {
   let toPageDua = useNavigate();
@@ -37,6 +37,7 @@ const PhotoVideo = () => {
         </div>
       ) : (
         <div>
+          <NavbarProduct />
           <Helmet>
             <title>Product - Photo & Video</title>
             <meta
@@ -46,9 +47,9 @@ const PhotoVideo = () => {
           </Helmet>
           <div className="flex">
             <SidebarProduct />
-            <div className="w-[100%]">
+            <div className="w-[100%] mt-16 lg:mt-0">
               <button
-                className="bg-slate-200 text-slate-400 text-sm font-semibold flex justify-between items-center gap-1 px-3 py-2 mt-1 rounded-r-md hover:text-white hover:bg-orange-400 duration-300"
+                className="bg-slate-200 text-slate-400 text-sm font-semibold flex justify-between items-center gap-1 px-3 py-2 mt-1 rounded-r-md hover:text-white hover:bg-orange duration-300"
                 onClick={clickToPageTiga}
               >
                 <HiChevronDoubleLeft size={15} />
@@ -63,7 +64,7 @@ const PhotoVideo = () => {
                     <div className="bg-orange-500 h-[3px] w-20 my-2"></div>
                     <div className="grid grid-cols-2 gap-2 lg:mt-16 my-10">
                       <Link
-                        to={"/printing/calendar"}
+                        to={"/photo&video/photo"}
                         className="group relative border-2 border-transparent rounded-md hover:border-orange-500 duration-200"
                       >
                         <img
@@ -76,16 +77,16 @@ const PhotoVideo = () => {
                             view
                           </h1>
                         </div>
-                        <p className="hidden lg:block text-orange-500 bg-black opacity-80 font-semibold text-center rounded-sm py-2">
+                        <p className="hidden lg:block text-orange bg-black opacity-80 font-semibold text-center rounded-sm py-2">
                           Photography
                         </p>
-                        <div className="lg:hidden flex justify-between text-orange-500 bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1 md:py-6 md:px-3 md:text-lg">
+                        <div className="lg:hidden flex justify-between text-orange bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1 md:py-6 md:px-3 md:text-lg">
                           <p>Photography</p>
                           <p>Detail</p>
                         </div>
                       </Link>
                       <Link
-                        to={"/printing/calendar"}
+                        to={"/photo&video/video"}
                         className="group relative border-2 border-transparent rounded-md hover:border-orange-500 duration-200"
                       >
                         <img
@@ -98,10 +99,10 @@ const PhotoVideo = () => {
                             view
                           </h1>
                         </div>
-                        <p className="hidden lg:block text-orange-500 bg-black opacity-80 font-semibold text-center rounded-sm py-2">
+                        <p className="hidden lg:block text-orange bg-black opacity-80 font-semibold text-center rounded-sm py-2">
                           Videography
                         </p>
-                        <div className="lg:hidden flex justify-between text-orange-500 bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1 md:py-6 md:px-3 md:text-lg">
+                        <div className="lg:hidden flex justify-between text-orange bg-black opacity-80 font-semibold text-xs rounded-sm py-2 px-1 md:py-6 md:px-3 md:text-lg">
                           <p>Videography</p>
                           <p>Detail</p>
                         </div>
@@ -124,35 +125,34 @@ const PhotoVideo = () => {
                       video ini saat bekerjasama dengan Vivo untuk
                       memperkenalkan Vivo V11.
                     </p>
-                    <div className="bg-orange-500 h-[1px] w-full my-8"></div>
+                    <div className="bg-orange h-[1px] w-full my-8"></div>
                     <div className="flex justify-start items-center my-2">
-                      <BsCheck size={25} className="text-orange-500 mr-2" />
+                      <BsCheck size={25} className="text-orange mr-2" />
                       <p className="font-semibold text-slate-400">
                         Client : VIVO Indonesia
                       </p>
                     </div>
                     <div className="flex justify-start items-center my-2">
-                      <BsCheck size={25} className="text-orange-500 mr-2" />
+                      <BsCheck size={25} className="text-orange mr-2" />
                       <p className="font-semibold text-slate-400">
                         Project URL :{" "}
-                        <span className="text-orange-500 cursor-pointer">
+                        <span className="text-orange cursor-pointer">
                           View Here
                         </span>
                       </p>
                     </div>
                     <div className="flex justify-start items-center my-2">
-                      <BsCheck size={25} className="text-orange-500 mr-2" />
+                      <BsCheck size={25} className="text-orange mr-2" />
                       <p className="font-semibold text-slate-400">
                         Categories : Mini Drama Video Commercial – Technology
                         Product
                       </p>
                     </div>
-                    <div className="bg-orange-500 h-[1px] w-full my-8"></div>
+                    <div className="bg-orange h-[1px] w-full my-8"></div>
                   </div>
                 </div>
               </div>
               <BackToTop />
-              <ButtonNavigationProduct />
               <Footer />
             </div>
           </div>

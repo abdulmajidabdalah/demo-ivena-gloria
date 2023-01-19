@@ -26,7 +26,7 @@ const BackToTop = () => {
         {showTopBtn && (
           <FaAngleUp
             size={45}
-            className="icon-position icon-style fixed bottom-24 lg:bottom-0 right-[30px] z-20 bg-black opacity-60 border border-solid border-[#fff] rounded-t-md h-[40px] w-[40px] cursor-pointer text-white"
+            className="icon-position icon-style fixed bottom-0 lg:bottom-0 right-[30px] z-20 bg-black opacity-60 border border-solid border-[#fff] rounded-t-md h-[40px] w-[40px] cursor-pointer text-white"
             onClick={goToTop}
           />
         )}

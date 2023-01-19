@@ -2,12 +2,12 @@ import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Footer from "../../../components/Footer";
 import BackToTop from "../../../components/BackToTop";
-import ButtonNavigationProduct from "../../../components/ButtonNavigationProduct";
 import AsideDetailProduct from "../../../components/AsideDetailProduct";
 import { SlideshowLightbox } from "lightbox.js-react";
 import IMG1 from "../../../components/assets/products/01 EDITORIAL/02 MAJALAH/1.png";
 import IMG2 from "../../../components/assets/products/01 EDITORIAL/02 MAJALAH/2.png";
 import { IoMdCloseCircle } from "react-icons/io";
+import NavbarProduct from "../../../components/NavbarProduct";
 
 const Magazine = () => {
   let navigate = useNavigate();
@@ -18,6 +18,7 @@ const Magazine = () => {
   return (
     <>
       <div>
+        <NavbarProduct />
         <Helmet>
           <title>Editorial - Magazine</title>
           <meta
@@ -32,7 +33,7 @@ const Magazine = () => {
               <h1 className="my-4 text-xl font-bold hidden lg:block">
                 Magazine
               </h1>
-              <div className="lg:hidden flex justify-between text-lg font-bold my-8">
+              <div className="lg:hidden flex justify-between text-lg font-bold my-8 mt-16">
                 <p>Magazine</p>
                 <button onClick={back}>
                   <IoMdCloseCircle size={20} />
@@ -40,22 +41,21 @@ const Magazine = () => {
               </div>
               <SlideshowLightbox
                 theme="lightbox"
-                className="lg:grid lg:grid-cols-4 gap-1"
+                className="lg:grid lg:grid-cols-4 md:grid md:grid-cols-2 gap-1"
               >
                 <img
-                  className="rounded-lg w-full h-40 bg-slate-400 lg:mt-0 mt-4"
+                  className="rounded-lg w-full h-40 bg-detail-product lg:mt-0 mt-4"
                   src={IMG2}
                   alt=""
                 />
                 <img
-                  className="rounded-lg w-full h-40 bg-slate-400 lg:mt-0 mt-4"
+                  className="rounded-lg w-full h-40 bg-detail-product lg:mt-0 mt-4"
                   src={IMG1}
                   alt=""
                 />
               </SlideshowLightbox>
             </main>
             <BackToTop />
-            <ButtonNavigationProduct />
             <Footer />
           </div>
         </section>

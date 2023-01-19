@@ -8,7 +8,7 @@ import ReactWhatsapp from "react-whatsapp";
 const Footer = () => {
   return (
     <>
-      <footer className="lg:flex lg:justify-between md:items-center md:flex md:justify-between bg-[#2B333E] text-white h-[35vh] md:h-0 lg:h-[14px] px-6 lg:px-12 py-8 md:pb-40 lg:pb-20 font-poppins">
+      <footer className="lg:flex lg:justify-between md:items-center md:flex md:justify-between bg-[#2B333E] text-white md:h-0 lg:h-[14px] px-6 lg:px-12 py-8 md:pb-40 lg:pb-20 font-poppins">
         <article className="block">
           <p className="text-gray-500 text-sm md:mt-6">
             &copy;Copyright 2023 |{" "}

@@ -1,70 +1,63 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { imgdetails } from "../../../data/imgdetails";
+import Footer from "../../../components/Footer";
+import BackToTop from "../../../components/BackToTop";
+import AsideDetailProduct from "../../../components/AsideDetailProduct";
+import { SlideshowLightbox } from "lightbox.js-react";
+import { calendar } from "../../../data/calendar";
+import { IoMdCloseCircle } from "react-icons/io";
+import NavbarProduct from "../../../components/NavbarProduct";
 
 const Calendar = () => {
-  const [sliderData, setSliderData] = useState(imgdetails[0]);
-
-  const handleClick = (index) => {
-    const slider = imgdetails[index];
-    setSliderData(slider);
+  let navigate = useNavigate();
+  const back = () => {
+    navigate("/printing");
   };
+
   return (
-    <div>
-      <Helmet>
-        <title>Printing - Calendar</title>
-      </Helmet>
-      <div className="flex justify-center items-center h-screen">
-        <div className="lg:grid lg:grid-cols-2 lg:h-[90%] lg:w-[80%] w-full h-screen rounded-xl lg:shadow-sm lg:shadow-slate-600 lg:p-0 p-2">
-          <div className="lg:hidden flex justify-between font-bold text-xl">
-            <h1>Calendar</h1>
-            <Link to={"/printing"}>x</Link>
-          </div>
-          <div className="flex justify-center items-center lg:px-4 mt-10">
-            <img
-              src={sliderData.image}
-              alt=""
-              className="lg:h-[300px] h-[200px]"
-            />
-          </div>
-          <div>
-            <Link
-              to={"/printing"}
-              className="text-right font-bold pr-5 float-right hidden lg:block"
-            >
-              x
-            </Link>
-            <h1 className="font-bold my-10 text-4xl hidden lg:block">
-              Calendar
-            </h1>
-            <p className="font-bold text-xl my-5">Select Image Product</p>
-            <div className="grid grid-cols-5 gap-2 pr-1">
-              {imgdetails.map((item, i) => (
-                <div
-                  key={i}
-                  className={
-                    sliderData.id === i
-                      ? "bg-slate-200 flex justify-center items-center border-2 border-orange-400 hover:cursor-pointer rounded-md"
-                      : "flex justify-center items-center border-2 border-slate-300 rounded-md"
-                  }
-                >
+    <>
+      <div>
+        <NavbarProduct />
+        <Helmet>
+          <title>Printing - Calendar</title>
+          <meta
+            name="description"
+            content="Editorial berisi tentang bla bla bla"
+          />
+        </Helmet>
+        <section className="flex">
+          <AsideDetailProduct />
+          <div className="w-[100%] mt-2">
+            <main className="px-4">
+              <h1 className="my-4 text-xl font-bold hidden lg:block">
+                Calendar
+              </h1>
+              <div className="lg:hidden flex justify-between text-lg font-bold my-8 mt-16">
+                <p>Calendar</p>
+                <button onClick={back}>
+                  <IoMdCloseCircle size={20} />
+                </button>
+              </div>
+              <SlideshowLightbox
+                theme="lightbox"
+                className="lg:grid lg:grid-cols-4 gap-1"
+              >
+                {calendar.map((item, index) => (
                   <img
+                    key={index}
+                    className="lg:mt-0 mt-4"
                     src={item.image}
                     alt=""
-                    className="lg:w-[60px] lg:h-[60px] w-[50px] h-[50px] cursor-pointer"
-                    onClick={() => handleClick(i)}
                   />
-                </div>
-              ))}
-            </div>
-            <button className="bg-slate-500 px-3 py-2 my-8 rounded-md text-white">
-              Order Now
-            </button>
+                ))}
+              </SlideshowLightbox>
+            </main>
+            <BackToTop />
+            <Footer />
           </div>
-        </div>
+        </section>
       </div>
-    </div>
+    </>
   );
 };
 

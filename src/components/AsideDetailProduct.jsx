@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../components/assets/Logo Ivena.png";
+import Logo from "../components/assets/LogoIvena.png";
 import { CiShop } from "react-icons/ci";
 import { BsCamera } from "react-icons/bs";
 import { BiBookBookmark, BiPaintRoll } from "react-icons/bi";
@@ -35,7 +35,7 @@ const AsideDetailProduct = () => {
             className="flex justify-between items-center gap-1 hover:text-[#F4AD24]"
           >
             <BiBookBookmark size={35} className="" />
-            <p className="font-poppins font-bold text-2xl mt-2">Editorial</p>
+            <p className="font-poppins font-bold text-xl mt-2">Editorial</p>
           </button>
         </nav>
         <nav className="bg-[#2B333E] border-t-2 border-white flex justify-start items-center text-center text-gray-500  duration-150 pl-4">
@@ -44,7 +44,7 @@ const AsideDetailProduct = () => {
             className="flex justify-between items-center gap-2 hover:text-[#F4AD24]"
           >
             <BiPaintRoll size={35} className="" />
-            <p className="font-poppins font-bold text-2xl mt-2">Printing</p>
+            <p className="font-poppins font-bold text-xl mt-2">Printing</p>
           </button>
         </nav>
         <nav className="bg-[#2B333E] border-t-2 border-white flex justify-start items-center text-center text-gray-500 duration-150 pl-4">
@@ -53,7 +53,7 @@ const AsideDetailProduct = () => {
             className="flex justify-between items-center gap-2 hover:text-[#F4AD24]"
           >
             <CiShop size={35} className="" />
-            <p className="font-poppins font-bold text-2xl mt-2">Merchandise</p>
+            <p className="font-poppins font-bold text-xl mt-2">Merchandise</p>
           </button>
         </nav>
         <nav className="bg-[#2B333E] border-t-2 border-white flex justify-start items-center text-center text-gray-500 duration-150 pl-4">
@@ -62,9 +62,7 @@ const AsideDetailProduct = () => {
             className="flex justify-between items-center gap-2 hover:text-[#F4AD24]"
           >
             <BsCamera size={35} className="" />
-            <p className="font-poppins font-bold text-2xl mt-1">
-              Photo & Video
-            </p>
+            <p className="font-poppins font-bold text-xl mt-1">Photo & Video</p>
           </button>
         </nav>
       </div>
