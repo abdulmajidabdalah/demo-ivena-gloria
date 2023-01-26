@@ -31,21 +31,20 @@ const ContactIcon = () => {
     <div>
       {showButton && (
         <>
-          <div className="fixed top-[73%] lg:top-[67%] right-5 lg:right-8 w-11 h-11 cursor-pointer">
+          <div className="grid grid-rows-2 gap-2 fixed top-[73%] lg:top-[67%] right-5 lg:right-[1.6rem] cursor-pointer">
             <a
               href="mailto:abdulmajidabdalah27@gmail.com"
               target="_blank"
               rel="noreferrer"
+              className="w-11 h-11"
             >
               <img src={IMGEMAIL} alt="" />
             </a>
-          </div>
-          <div className="fixed top-[82%] lg:top-[75%] right-5 lg:right-8 w-10 h-10 cursor-pointer">
             <ReactWhatsapp
               number="+6285782189711"
               message="please ask something"
             >
-              <img src={IMGWA} alt="" />
+              <img src={IMGWA} alt="" className="w-11 h-11" />
             </ReactWhatsapp>
           </div>
         </>

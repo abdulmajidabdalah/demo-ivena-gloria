@@ -31,7 +31,7 @@ import NavbarMobile from "./components/NavbarMobile";
 
 const App = () => {
   useEffect(() => {
-    initLightboxJS("B687-FA0A-3438-D2C6", "Individu");
+    initLightboxJS("B687FA0A3438D2C6", "Individu");
   }, []);
   return (
     <>
