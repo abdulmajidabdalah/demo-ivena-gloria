@@ -1,12 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Footer from "../../../components/Footer";
-import BackToTop from "../../../components/BackToTop";
 import AsideDetailProduct from "../../../components/AsideDetailProduct";
 import { IoMdCloseCircle } from "react-icons/io";
 import NavbarProduct from "../../../components/NavbarProduct";
 import { SlideshowLightbox } from "lightbox.js-react";
 import { banner } from "../../../data/banner";
+import ContactIcon from "../../../components/ContactIcon";
 
 const Banner = () => {
   let navigate = useNavigate();
@@ -50,7 +50,7 @@ const Banner = () => {
                 ))}
               </SlideshowLightbox>
             </main>
-            <BackToTop />
+            <ContactIcon />
             <Footer />
           </div>
         </section>

@@ -1,14 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Footer from "../../../components/Footer";
-import BackToTop from "../../../components/BackToTop";
 import AsideDetailProduct from "../../../components/AsideDetailProduct";
-import { SlideshowLightbox } from "lightbox.js-react";
-import IMG1 from "../../../components/assets/products/01 EDITORIAL/04 BUKU PERUSAHAAN/a5-taspen_life.png";
-import IMG2 from "../../../components/assets/products/01 EDITORIAL/04 BUKU PERUSAHAAN/Panduan kominfo.png";
-import IMG3 from "../../../components/assets/products/01 EDITORIAL/04 BUKU PERUSAHAAN/PNPM book.png";
+import Video from "../../../components/assets/products/04 PHOTO VIDEO/01 PHOTOGRAPHY/PHOTOGRAPHY.mp4";
 import { IoMdCloseCircle } from "react-icons/io";
 import NavbarProduct from "../../../components/NavbarProduct";
+import ContactIcon from "../../../components/ContactIcon";
 
 const Photo = () => {
   let navigate = useNavigate();
@@ -38,28 +35,13 @@ const Photo = () => {
                   <IoMdCloseCircle size={20} />
                 </button>
               </div>
-              <SlideshowLightbox
-                theme="lightbox"
-                className="lg:grid lg:grid-cols-4 gap-1"
-              >
-                <img
-                  className="lg:mt-0 mt-4 rounded-lg w-full h-40 bg-detail-product"
-                  src={IMG2}
-                  alt=""
-                />
-                <img
-                  className="lg:mt-0 mt-4 rounded-lg w-full h-40 bg-detail-product"
-                  src={IMG1}
-                  alt=""
-                />
-                <img
-                  className="lg:mt-0 mt-4 rounded-lg w-full h-40 bg-detail-product"
-                  src={IMG3}
-                  alt=""
-                />
-              </SlideshowLightbox>
+              <div className="lg:grid lg:grid-cols-3 gap-1">
+                <video controls controlsList="nodownload">
+                  <source src={Video} type="video/mp4" />
+                </video>
+              </div>
             </main>
-            <BackToTop />
+            <ContactIcon />
             <Footer />
           </div>
         </section>

@@ -1,13 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Footer from "../../../components/Footer";
-import BackToTop from "../../../components/BackToTop";
 import AsideDetailProduct from "../../../components/AsideDetailProduct";
 import { SlideshowLightbox } from "lightbox.js-react";
 import IMG1 from "../../../components/assets/products/01 EDITORIAL/02 MAJALAH/1.png";
 import IMG2 from "../../../components/assets/products/01 EDITORIAL/02 MAJALAH/2.png";
 import { IoMdCloseCircle } from "react-icons/io";
 import NavbarProduct from "../../../components/NavbarProduct";
+import ContactIcon from "../../../components/ContactIcon";
 
 const Magazine = () => {
   let navigate = useNavigate();
@@ -41,21 +41,13 @@ const Magazine = () => {
               </div>
               <SlideshowLightbox
                 theme="lightbox"
-                className="lg:grid lg:grid-cols-4 md:grid md:grid-cols-2 gap-1"
+                className="lg:grid lg:grid-cols-4 md:grid md:grid-cols-2 grid grid-cols-3 gap-1"
               >
-                <img
-                  className="rounded-lg w-full h-40 bg-detail-product lg:mt-0 mt-4"
-                  src={IMG2}
-                  alt=""
-                />
-                <img
-                  className="rounded-lg w-full h-40 bg-detail-product lg:mt-0 mt-4"
-                  src={IMG1}
-                  alt=""
-                />
+                <img className="lg:mt-0 mt-4" src={IMG2} alt="" />
+                <img className="lg:mt-0 mt-4" src={IMG1} alt="" />
               </SlideshowLightbox>
             </main>
-            <BackToTop />
+            <ContactIcon />
             <Footer />
           </div>
         </section>

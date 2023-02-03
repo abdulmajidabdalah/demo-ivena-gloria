@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Footer from "../../../components/Footer";
-import BackToTop from "../../../components/BackToTop";
 import AsideDetailProduct from "../../../components/AsideDetailProduct";
 import NavbarProduct from "../../../components/NavbarProduct";
 import { SlideshowLightbox } from "lightbox.js-react";
@@ -9,6 +8,7 @@ import IMG1 from "../../../components/assets/products/01 EDITORIAL/04 BUKU PERUS
 import IMG2 from "../../../components/assets/products/01 EDITORIAL/04 BUKU PERUSAHAAN/Panduan kominfo.png";
 import IMG3 from "../../../components/assets/products/01 EDITORIAL/04 BUKU PERUSAHAAN/PNPM book.png";
 import { IoMdCloseCircle } from "react-icons/io";
+import ContactIcon from "../../../components/ContactIcon";
 
 const Trophy = () => {
   let navigate = useNavigate();
@@ -59,7 +59,7 @@ const Trophy = () => {
                 />
               </SlideshowLightbox>
             </main>
-            <BackToTop />
+            <ContactIcon />
             <Footer />
           </div>
         </section>

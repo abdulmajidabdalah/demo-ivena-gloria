@@ -1,13 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Footer from "../../../components/Footer";
-import BackToTop from "../../../components/BackToTop";
 import AsideDetailProduct from "../../../components/AsideDetailProduct";
 import { SlideshowLightbox } from "lightbox.js-react";
 import IMG1 from "../../../components/assets/products/01 EDITORIAL/01 COMPANY PROFILE/1.png";
 import IMG2 from "../../../components/assets/products/01 EDITORIAL/01 COMPANY PROFILE/2.png";
 import { IoMdCloseCircle } from "react-icons/io";
 import NavbarProduct from "../../../components/NavbarProduct";
+import ContactIcon from "../../../components/ContactIcon";
 
 const CompanyProfile = () => {
   let navigate = useNavigate();
@@ -55,7 +55,7 @@ const CompanyProfile = () => {
                 />
               </SlideshowLightbox>
             </main>
-            <BackToTop />
+            <ContactIcon />
             <Footer />
           </div>
         </section>

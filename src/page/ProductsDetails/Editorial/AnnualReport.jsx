@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Footer from "../../../components/Footer";
-import BackToTop from "../../../components/BackToTop";
+import ContactIcon from "../../../components/ContactIcon";
 import AsideDetailProduct from "../../../components/AsideDetailProduct";
 import { SlideshowLightbox } from "lightbox.js-react";
 import { IoMdCloseCircle } from "react-icons/io";
@@ -19,7 +19,7 @@ const AnnualReport = () => {
       <div>
         <NavbarProduct />
         <Helmet>
-          <title>Editorial - AnnualReport</title>
+          <title>Editorial - Annual Report</title>
           <meta
             name="description"
             content="Editorial berisi tentang bla bla bla"
@@ -30,10 +30,10 @@ const AnnualReport = () => {
           <div className="w-[100%] mt-2">
             <main className="px-4">
               <h1 className="my-4 text-xl font-bold hidden lg:block">
-                AnnualReport
+                Annual Report
               </h1>
               <div className="lg:hidden flex justify-between text-lg font-bold my-8 mt-16">
-                <p>AnnualReport</p>
+                <p>Annual Report</p>
                 <button onClick={back}>
                   <IoMdCloseCircle size={20} />
                 </button>
@@ -52,7 +52,7 @@ const AnnualReport = () => {
                 ))}
               </SlideshowLightbox>
             </main>
-            <BackToTop />
+            <ContactIcon />
             <Footer />
           </div>
         </section>

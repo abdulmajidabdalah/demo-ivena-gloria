@@ -1,8 +1,5 @@
 import React from "react";
 import Logo from "../components/assets/LogoIvena.png";
-import { CiShop } from "react-icons/ci";
-import { BsCamera } from "react-icons/bs";
-import { BiBookBookmark, BiPaintRoll } from "react-icons/bi";
 import { Link, useNavigate } from "react-router-dom";
 
 const AsideDetailProduct = () => {
@@ -29,40 +26,48 @@ const AsideDetailProduct = () => {
             <img src={Logo} alt="logo" />
           </Link>
         </nav>
-        <nav className="bg-[#2B333E] border-t-2 border-white flex justify-start items-center text-center text-gray-500  duration-150 pl-4">
+        <nav className="bg-bg-aside border-b-[0.5px] border-gray-500 flex justify-center items-center text-center text-gray-500">
           <button
             onClick={clickBackToEditorial}
-            className="flex justify-between items-center gap-1 hover:text-[#F4AD24]"
+            className="hover:text-orange hover:cursor-pointer"
           >
-            <BiBookBookmark size={35} className="" />
-            <p className="font-poppins font-bold text-xl mt-2">Editorial</p>
+            <div>
+              <i className="icofont-book-alt icofont-2x"></i>
+              <p className="font-poppins font-bold text-xl">Editorial</p>
+            </div>
           </button>
         </nav>
-        <nav className="bg-[#2B333E] border-t-2 border-white flex justify-start items-center text-center text-gray-500  duration-150 pl-4">
+        <nav className="bg-bg-aside border-b-[0.5px] border-gray-500 flex justify-center items-center text-center text-gray-500">
           <button
             onClick={clickBackToPrinting}
-            className="flex justify-between items-center gap-2 hover:text-[#F4AD24]"
+            className="hover:text-orange hover:cursor-pointer duration-200"
           >
-            <BiPaintRoll size={35} className="" />
-            <p className="font-poppins font-bold text-xl mt-2">Printing</p>
+            <div>
+              <i className="icofont-paint-brush icofont-2x"></i>
+              <p className="font-poppins font-bold text-xl">Printing</p>
+            </div>
           </button>
         </nav>
-        <nav className="bg-[#2B333E] border-t-2 border-white flex justify-start items-center text-center text-gray-500 duration-150 pl-4">
+        <nav className="bg-bg-aside border-b-[0.5px] border-gray-500 flex justify-center items-center text-center text-gray-500">
           <button
             onClick={clickBackToMerchandise}
-            className="flex justify-between items-center gap-2 hover:text-[#F4AD24]"
+            className="hover:text-orange hover:cursor-pointer duration-200"
           >
-            <CiShop size={35} className="" />
-            <p className="font-poppins font-bold text-xl mt-2">Merchandise</p>
+            <div>
+              <i className="icofont-package icofont-2x"></i>
+              <p className="font-poppins font-bold text-xl">Merchandise</p>
+            </div>
           </button>
         </nav>
-        <nav className="bg-[#2B333E] border-t-2 border-white flex justify-start items-center text-center text-gray-500 duration-150 pl-4">
+        <nav className="bg-bg-aside border-b-[0.5px] border-gray-500 flex justify-center items-center text-center text-gray-500">
           <button
             onClick={clickBackToPhotoVideo}
-            className="flex justify-between items-center gap-2 hover:text-[#F4AD24]"
+            className="hover:text-orange hover:cursor-pointer duration-200"
           >
-            <BsCamera size={35} className="" />
-            <p className="font-poppins font-bold text-xl mt-1">Photo & Video</p>
+            <div>
+              <i className="icofont-camera icofont-2x"></i>
+              <p className="font-poppins font-bold text-xl">Photo & Video</p>
+            </div>
           </button>
         </nav>
       </div>

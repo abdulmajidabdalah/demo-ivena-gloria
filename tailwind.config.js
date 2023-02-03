@@ -9,7 +9,7 @@ module.exports = {
       },
       backgroundImage: {
         "bg-header":
-          "linear-gradient(to right, rgba(6,6,6,1), rgba(6,5,6,0)),url('/src/components/assets/copernico-p_kICQCOM4s-unsplash.jpg')",
+          "linear-gradient(to right, rgba(6,6,6,1), rgba(6,5,6,0)),url('/src/components/assets/copernico-p_kICQCOM4s-unsplash.jpeg')",
       },
       colors: {
         "bg-aside": "#2B333E",

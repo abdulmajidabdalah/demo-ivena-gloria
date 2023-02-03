@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Footer from "../../../components/Footer";
-import BackToTop from "../../../components/BackToTop";
 import AsideDetailProduct from "../../../components/AsideDetailProduct";
 import { SlideshowLightbox } from "lightbox.js-react";
 import IMG1 from "../../../components/assets/products/03 MERCHANDISE/01 SOUVENIR/souvenir.jpeg";
@@ -13,6 +12,7 @@ import IMG6 from "../../../components/assets/products/03 MERCHANDISE/01 SOUVENIR
 import IMG7 from "../../../components/assets/products/03 MERCHANDISE/01 SOUVENIR/souvenir1.jpeg";
 import { IoMdCloseCircle } from "react-icons/io";
 import NavbarProduct from "../../../components/NavbarProduct";
+import ContactIcon from "../../../components/ContactIcon";
 
 const Souvenir = () => {
   let navigate = useNavigate();
@@ -57,7 +57,7 @@ const Souvenir = () => {
                 <img className="lg:mt-0 mt-4 mb-4" src={IMG7} alt="" />
               </SlideshowLightbox>
             </main>
-            <BackToTop />
+            <ContactIcon />
             <Footer />
           </div>
         </section>

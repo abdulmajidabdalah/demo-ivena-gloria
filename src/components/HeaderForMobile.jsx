@@ -1,5 +1,5 @@
 import React from "react";
-import VIDEO from "../components/assets/video.mp4";
+import IMG from "../components/assets/copernico-p_kICQCOM4s-unsplash.jpeg";
 import Modal from "./Modal";
 import Typewriter from "typewriter-effect";
 
@@ -7,9 +7,7 @@ const HeaderForMobile = () => {
   return (
     <div className="lg:hidden md:hidden relative mt-20" id="headerMobile">
       <div>
-        <video autoPlay muted controlsList="nodownload">
-          <source src={VIDEO} type="video/mp4" />
-        </video>
+        <img src={IMG} alt="" />
       </div>
       <div className="h-[50vh] bg-[#F2F2F2] py-7">
         <div

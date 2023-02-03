@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { BsChatText } from "react-icons/bs";
-import { FaWindowClose } from "react-icons/fa";
 import { FaAngleUp } from "react-icons/fa";
 import ReactWhatsapp from "react-whatsapp";
-import IMGWA from "../components/assets/whatsapp-icon-logo-svgrepo-com.svg";
-import IMGEMAIL from "../components/assets/gmail.svg";
 
 const ContactIcon = () => {
   const [showButton, setShowButton] = useState(false);
@@ -31,38 +27,39 @@ const ContactIcon = () => {
     <div>
       {showButton && (
         <>
-          <div className="grid grid-rows-2 gap-2 fixed top-[73%] lg:top-[67%] right-5 lg:right-[1.6rem] cursor-pointer">
+          <div className="grid grid-rows-2 gap-2 fixed top-[71%] lg:top-[63%] right-5 cursor-pointer">
             <a
               href="mailto:abdulmajidabdalah27@gmail.com"
               target="_blank"
               rel="noreferrer"
-              className="w-11 h-11"
+              className="h-12 w-12 lg:w-14 lg:h-14 bg-purple-400 text-white rounded-[50%] flex justify-center items-center"
             >
-              <img src={IMGEMAIL} alt="" />
+              <i className="icofont-email icofont-2x"></i>
             </a>
             <ReactWhatsapp
               number="+6285782189711"
               message="please ask something"
+              className="h-12 w-12 lg:w-14 lg:h-14 bg-purple-400 text-white rounded-[50%] flex justify-center items-center"
             >
-              <img src={IMGWA} alt="" className="w-11 h-11" />
+              <i className="icofont-brand-whatsapp icofont-2x"></i>
             </ReactWhatsapp>
           </div>
         </>
       )}
 
       <div
-        className="fixed top-[90%] lg:top-[83%] right-5 h-12 w-12 lg:w-14 lg:h-14 rounded-[50%] bg-purple-400 text-white flex items-center justify-center cursor-pointer"
+        className="fixed top-[88%] lg:top-[83%] right-5 h-12 w-12 lg:w-14 lg:h-14 rounded-[50%] bg-purple-400 text-white flex items-center justify-center cursor-pointer"
         onClick={() => setShowButton(!showButton)}
       >
         <div className="text-white">
           {showButton === true ? (
-            <FaWindowClose size={25} className="text-white" />
+            <i className="icofont-close-circled icofont-2x"></i>
           ) : (
-            <BsChatText size={25} className="text-white" />
+            <i className="icofont-ui-chat icofont-2x"></i>
           )}
         </div>
       </div>
-      <div className="relative hidden lg:block">
+      <div className="relative">
         {showTopBtn && (
           <FaAngleUp
             size={45}

@@ -1,23 +1,23 @@
-import IMG1 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/1.png";
-import IMG2 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/2.png";
-import IMG3 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/3.png";
-import IMG4 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/4.png";
-import IMG5 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/5.png";
-import IMG6 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/6.png";
-import IMG7 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/7.png";
-import IMG8 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/8.png";
-import IMG9 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/9.png";
-import IMG10 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/10.png";
-import IMG11 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/11.png";
-import IMG12 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/12.png";
-import IMG13 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/13.png";
-import IMG14 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/14.png";
-import IMG15 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/15.png";
-import IMG16 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/16.png";
-import IMG17 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/17.png";
-import IMG18 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/18.png";
-import IMG19 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/19.png";
-import IMG20 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/20.png";
+import IMG1 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/1.jpeg";
+import IMG2 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/2.jpeg";
+import IMG3 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/3.jpeg";
+import IMG4 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/4.jpeg";
+import IMG5 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/5.jpeg";
+import IMG6 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/6.jpeg";
+import IMG7 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/7.jpeg";
+import IMG8 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/8.jpeg";
+import IMG9 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/9.jpeg";
+import IMG10 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/10.jpeg";
+import IMG11 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/11.jpeg";
+import IMG12 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/12.jpeg";
+import IMG13 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/13.jpeg";
+import IMG14 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/14.jpeg";
+import IMG15 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/15.jpeg";
+import IMG16 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/16.jpeg";
+import IMG17 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/17.jpeg";
+import IMG18 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/18.jpeg";
+import IMG19 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/19.jpeg";
+import IMG20 from "../../src/components/assets/products/01 EDITORIAL/03 ANNUAL REPORT/20.jpeg";
 
 export const annualReportImg = [
   {

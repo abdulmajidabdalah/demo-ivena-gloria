@@ -1,12 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Footer from "../../../components/Footer";
-import BackToTop from "../../../components/BackToTop";
 import AsideDetailProduct from "../../../components/AsideDetailProduct";
 import { SlideshowLightbox } from "lightbox.js-react";
 import { calendar } from "../../../data/calendar";
 import { IoMdCloseCircle } from "react-icons/io";
 import NavbarProduct from "../../../components/NavbarProduct";
+import ContactIcon from "../../../components/ContactIcon";
 
 const Calendar = () => {
   let navigate = useNavigate();
@@ -52,7 +52,7 @@ const Calendar = () => {
                 ))}
               </SlideshowLightbox>
             </main>
-            <BackToTop />
+            <ContactIcon />
             <Footer />
           </div>
         </section>

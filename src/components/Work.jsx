@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import IMG2 from "./assets/home/portfolio.jpg";
+import IMG2 from "./assets/home/portfolio.jpeg";
 import Editorial from "./assets/thumb_product/editorial.png";
 import Printing from "./assets/thumb_product/printing.png";
 import Merchandise from "./assets/thumb_product/merchandise.png";
@@ -13,16 +13,23 @@ const Work = () => {
     <section id="work">
       <div>
         <div className="lg:grid lg:grid-cols-3 md:grid md:grid-cols-3 bg-[#F2F2F2] h-[100vh] md:h-full lg:h-auto">
-          <main className="col-span-2 mx-4 lg:mx-[68px] lg:mt-[62px]">
+          <main className="col-span-2 mx-4 lg:mx-[68px] lg:mt-[40px]">
             <p className="text-6xl md:text-8xl lg:text-8xl text-white font-poppins font-bold tracking-wider pt-[50px] lg:pt-0">
               Portfolio
             </p>
             <p className="font-extrabold font-poppins text-2xl md:text-4xl lg:text-4xl text-[#333C4E] tracking-wider mt-2 lg:mt-0">
               Our Project
             </p>
-            <div className="grid grid-cols-2 lg:grid lg:grid-cols-2 gap-[20px] mt-[70px] lg:mt-[95px]">
+            <div className="grid grid-cols-2 lg:grid lg:grid-cols-2 gap-[20px] mt-[30px]">
               <Link to="/editorial" className="group relative">
-                <img src={Editorial} alt="" className="ml-[-1rem] mt-[1rem]" />
+                <img
+                  src={Editorial}
+                  alt=""
+                  className="lg:ml-[2rem] lg:mt-[1rem] lg:w-[200px] lg:h-[200px]"
+                />
+                <p className="lg:hidden ml-6 text-center text-lg font-semibold">
+                  Editorial
+                </p>
                 <div className="hidden absolute top-0 left-0 w-full h-0 lg:flex flex-col justify-center items-center bg-[#121111] opacity-0 group-hover:h-full group-hover:rounded-md group-hover:opacity-80 group-hover:cursor-pointer duration-500">
                   <h1 className="uppercase text-[#F4AD24] text-xl font-semibold tracking-widest ">
                     editorial
@@ -30,7 +37,14 @@ const Work = () => {
                 </div>
               </Link>
               <Link to="/printing" className="group relative">
-                <img src={Printing} alt="" className="ml-[-1rem] mt-[1rem]" />
+                <img
+                  src={Printing}
+                  alt=""
+                  className="lg:ml-[2rem] lg:mt-[1rem] lg:w-[200px] lg:h-[200px]"
+                />
+                <p className="lg:hidden ml-6 text-center text-lg font-semibold">
+                  Printing
+                </p>
                 <div className="hidden absolute top-0 left-0 w-full h-0 lg:flex flex-col justify-center items-center bg-[#121111] opacity-0 group-hover:h-full group-hover:rounded-md group-hover:opacity-80 group-hover:cursor-pointer duration-500">
                   <h1 className="uppercase text-[#F4AD24] text-xl font-semibold tracking-widest ">
                     printing
@@ -41,8 +55,11 @@ const Work = () => {
                 <img
                   src={Merchandise}
                   alt=""
-                  className="ml-[-1rem] mt-[1rem]"
+                  className="lg:ml-[2rem] lg:mt-[1rem] lg:w-[200px] lg:h-[200px]"
                 />
+                <p className="lg:hidden ml-6 text-center text-lg font-semibold">
+                  Merchandise
+                </p>
                 <div className="hidden absolute top-0 left-0 w-full h-0 lg:flex flex-col justify-center items-center bg-[#121111] opacity-0 group-hover:h-full group-hover:rounded-md group-hover:opacity-80 group-hover:cursor-pointer duration-500">
                   <h1 className="uppercase text-[#F4AD24] text-xl font-semibold tracking-widest ">
                     merchandise
@@ -50,7 +67,14 @@ const Work = () => {
                 </div>
               </Link>
               <Link to="/photo&video" className="group relative">
-                <img src={PhotoVideo} alt="" className="ml-[-1rem] mt-[1rem]" />
+                <img
+                  src={PhotoVideo}
+                  alt=""
+                  className="lg:ml-[2rem] lg:mt-[1rem] lg:w-[200px] lg:h-[200px]"
+                />
+                <p className="lg:hidden ml-6 text-center text-lg font-semibold">
+                  Photo & Video
+                </p>
                 <div className="hidden absolute top-0 left-0 w-full h-0 lg:flex flex-col justify-center items-center bg-[#121111] opacity-0 group-hover:h-full group-hover:rounded-md group-hover:opacity-80 group-hover:cursor-pointer duration-500">
                   <h1 className="uppercase text-[#F4AD24] text-xl font-semibold tracking-widest ">
                     photo & video

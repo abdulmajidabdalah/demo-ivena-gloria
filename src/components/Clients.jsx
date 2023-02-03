@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FiArrowDown } from "react-icons/fi";
-import IMG2 from "./assets/home/client.jpg";
+import IMG2 from "./assets/home/client.jpeg";
 import { clients } from "../data/clients";
 import { Link as Button } from "react-scroll";
 
@@ -13,11 +13,11 @@ const Clients = () => {
   return (
     <section id="clients">
       <div className="lg:grid lg:grid-cols-3 md:grid md:grid-cols-3 bg-[#FFFFFF]">
-        <main className="col-span-2 mx-4 md:mt-[50px] lg:mx-[68px] lg:mt-[87px] ">
+        <main className="col-span-2 mx-4 md:mt-[50px] lg:mx-[68px] lg:mt-[50px] ">
           <h1 className="text-6xl pt-[50px] lg:pt-0 lg:text-8xl text-[#F2F2F2] font-poppins font-bold tracking-wider">
             Clients.
           </h1>
-          <h2 className="font-extrabold font-poppins text-lg lg:text-4xl text-[#333C4E] tracking-wider mb-[45px] lg:mt-[30px] lg:mb-[75px]">
+          <h2 className="font-extrabold font-poppins text-lg lg:text-4xl text-[#333C4E] tracking-wider mb-[45px] lg:mt-[20px]">
             OUR HAPPY CLIENTS.
           </h2>
           <div className="grid grid-cols-4 md:grid md:grid-cols-6 lg:grid lg:grid-cols-8 gap-2 mb-[40px] lg:mb-[40px]">
@@ -35,7 +35,7 @@ const Clients = () => {
             }
             onClick={() => loadMore()}
           >
-            Load More
+            View More
           </button>
           <Button
             to="contact"

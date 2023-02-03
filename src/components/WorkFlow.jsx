@@ -1,5 +1,5 @@
 import React from "react";
-import IMG2 from "./assets/home/workflow.jpg";
+import IMG2 from "./assets/home/workflow.jpeg";
 import { FiArrowDown } from "react-icons/fi";
 import { Link as Button } from "react-scroll";
 

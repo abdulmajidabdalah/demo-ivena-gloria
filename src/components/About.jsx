@@ -1,5 +1,5 @@
 import React from "react";
-import IMG2 from "./assets/home/about.jpg";
+import IMG2 from "./assets/home/about.jpeg";
 import { FiArrowDown } from "react-icons/fi";
 import { Link } from "react-scroll";
 import ModalForm from "./ModalForm";
