@@ -1,8 +1,4 @@
 import React from "react";
-import IMG1 from "../components/assets/instagram-1-svgrepo-com.svg";
-import IMG2 from "../components/assets/youtube-icon.svg";
-import IMG3 from "../components/assets/whatsapp-icon-logo-svgrepo-com.svg";
-import IMG4 from "../components/assets/gmail.svg";
 import ReactWhatsapp from "react-whatsapp";
 
 const Footer = () => {
@@ -20,30 +16,30 @@ const Footer = () => {
             Jaka Setia, Kec. Bekasi Seletan, Kota Bekasi, Jawa Barat 17147
           </p>
         </article>
-        <div className="grid grid-cols-4 lg:gap-7 md:gap-5 items-center mx-12 lg:mx-8 mt-4 lg:mt-auto">
+        <div className="grid grid-cols-4 lg:gap-7 md:gap-5 items-center mx-12 lg:mx-8 mt-4 lg:mt-auto text-gray-500">
           <a
             href="https://www.instagram.com/ivenagloriardana/"
             target="_blank"
             rel="noreferrer"
           >
-            <img src={IMG1} alt="" className="h-[40px] w-[40px] object-cover" />
+            <i className="icofont-instagram icofont-2x"></i>
           </a>
           <a
             href="https://www.youtube.com/channel/UCh7PRO94pak4f7K_BmC4hSw"
             target="_blank"
             rel="noreferrer"
           >
-            <img src={IMG2} alt="" className="h-[40px] w-[40px] object-cover" />
+            <i className="icofont-youtube icofont-2x"></i>
           </a>
           <ReactWhatsapp number="+6285782189711" message="please ask something">
-            <img src={IMG3} alt="" className="h-[40px] w-[40px] object-cover" />
+            <i className="icofont-brand-whatsapp icofont-2x"></i>
           </ReactWhatsapp>
           <a
             href="mailto:abdulmajidabdalah27@gmail.com"
             target="_blank"
             rel="noreferrer"
           >
-            <img src={IMG4} alt="" className="h-[40px] w-[40px] object-cover" />
+            <i className="icofont-email icofont-2x"></i>
           </a>
         </div>
       </footer>
